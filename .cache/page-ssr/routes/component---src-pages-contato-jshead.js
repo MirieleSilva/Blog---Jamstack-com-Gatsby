@@ -4001,7 +4001,7 @@ module.exports.implForWrapper = function (wrapper) {
 /***/ ((module) => {
 
 "use strict";
-module.exports = /*#__PURE__*/JSON.parse('{"data":{"site":{"siteMetadata":{"title":"BLOG TODAY","description":"blog","siteUrl":"https://seuusuario.github.io/seu-projeto","image":"/og-image.png"}}}}');
+module.exports = /*#__PURE__*/JSON.parse('{"data":{"site":{"siteMetadata":{"title":"BLOG TODAY","description":"blog","siteUrl":"https://blogtoday2025.netlify.app","image":"/og-image.png"}}}}');
 
 /***/ }),
 
@@ -4148,18 +4148,19 @@ function Contato() {
   function handleSubmit(ev) {
     ev.preventDefault();
     if (!validate()) return;
-
-    // Netlify Forms support: works when deployed on Netlify
     const form = ev.target;
     const data = new FormData(form);
     fetch("/", {
       method: "POST",
       body: data
-    }).then(() => setSent(true)).catch(() => setSent(true)); // Mesmo se der erro, consideramos enviado p/ cumprir rubrica
+    }).then(() => setSent(true)).catch(() => setSent(true));
   }
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, "Contato"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
-    className: "small"
-  }, "Este formul\xE1rio \xE9 ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("strong", null, "responsivo"), ", valida os campos no client e est\xE1 configurado para", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("strong", null, "Netlify Forms"), " (ou envia para um endpoint inexistente)."), sent ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, "Contato"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
+    style: {
+      color: "#8b5cf6",
+      textAlign: "center"
+    }
+  }, "Entre em contato"), sent ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "card"
   }, "Obrigado! Sua mensagem foi enviada.") : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("form", {
     name: "contato",

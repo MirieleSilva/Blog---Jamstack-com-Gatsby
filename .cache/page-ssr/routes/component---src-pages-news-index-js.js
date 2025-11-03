@@ -3732,7 +3732,7 @@ function toDate(argument, context) {
 /***/ ((module) => {
 
 "use strict";
-module.exports = /*#__PURE__*/JSON.parse('{"data":{"site":{"siteMetadata":{"title":"BLOG TODAY","description":"blog","siteUrl":"https://seuusuario.github.io/seu-projeto","image":"/og-image.png"}}}}');
+module.exports = /*#__PURE__*/JSON.parse('{"data":{"site":{"siteMetadata":{"title":"BLOG TODAY","description":"blog","siteUrl":"https://blogtoday2025.netlify.app","image":"/og-image.png"}}}}');
 
 /***/ }),
 

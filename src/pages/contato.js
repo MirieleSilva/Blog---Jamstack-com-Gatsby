@@ -30,7 +30,7 @@ export default function Contato() {
 
   return (
     <Layout>
-      <h1>Contato</h1>
+      <h1 style={{ color: "#ffffff", textAlign: "center" }}>Contato</h1>
       {sent ? (
         <div className="card">Obrigado! Sua mensagem foi enviada.</div>
       ) : (
